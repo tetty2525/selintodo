@@ -1,5 +1,7 @@
 "use client";
 
+export const dynamic = 'force-dynamic'
+
 import * as React from 'react';
 import { useState } from 'react';
 import { Box, Typography } from '@mui/material';
