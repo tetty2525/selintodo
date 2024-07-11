@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Head from 'next/head';
 import { AppProps } from 'next/app';
-import { AppCacheProvider } from '@mui/material-nextjs/v13-pagesRouter';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Roboto } from 'next/font/google';
 
@@ -20,11 +19,11 @@ const roboto = Roboto({
      export default function MyApp(props: AppProps) {
       const { Component, pageProps } = props;
       return (
-        <AppCacheProvider {...props}>
+      <>  
           <Head>...</Head>
-    +     <ThemeProvider theme={theme}>
+          <ThemeProvider theme={theme}>
             <Component {...pageProps} />
-    +     </ThemeProvider>
-        </AppCacheProvider>
+          </ThemeProvider>
+      </>
       );
      }
