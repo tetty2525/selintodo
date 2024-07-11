@@ -11,7 +11,11 @@
   "dependencies": {
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.5"
+    "next": "14.2.5",
+    "@mui/material": "^5.0.0",
+    "@mui/icons-material": "^5.0.0",
+    "@mui/material-nextjs/v13-appRouter": "^1.0.0",
+    "zod": "^3.0.0"
   },
   "devDependencies": {
     "typescript": "^5",
